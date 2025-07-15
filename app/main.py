@@ -8,7 +8,6 @@ from router import router
 faqs_path = Path(__file__).parent / "resources/faq_data.csv"
 ingest_faq_data(faqs_path)
 
-
 def ask(query):
     route = router(query).name
     if route == 'faq':
@@ -18,11 +17,12 @@ def ask(query):
     elif route == 'small_talk':
         return talk(query)
     else:
-        return f"Route {route} not implemented yet"
+        return f"❗ Route `{route}` not implemented yet."
 
-st.title("E-commerce Bot")
+st.set_page_config(page_title="E-commerce Bot", page_icon="🛒")
+st.title("🛒 E-commerce Chat Assistant")
 
-query = st.chat_input("Write your query")
+query = st.chat_input("Type your query here (e.g., refund policy, track order, or say hi)")
 
 if "messages" not in st.session_state:
     st.session_state["messages"] = []
@@ -34,11 +34,9 @@ for message in st.session_state.messages:
 if query:
     with st.chat_message("user"):
         st.markdown(query)
-    st.session_state.messages.append({"role":"user", "content":query})
+    st.session_state.messages.append({"role": "user", "content": query})
 
     response = ask(query)
     with st.chat_message("assistant"):
         st.markdown(response)
     st.session_state.messages.append({"role": "assistant", "content": response})
-
-
