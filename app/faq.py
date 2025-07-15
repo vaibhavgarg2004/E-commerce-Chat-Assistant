@@ -1,4 +1,13 @@
 import os
+import sys
+
+os.environ["SQLITE3_CONNECT_PATCHED"] = "1"
+
+try:
+    import pysqlite3
+    sys.modules["sqlite3"] = sys.modules["pysqlite3"]
+except ImportError:
+    pass
 
 import chromadb
 from chromadb.utils import embedding_functions
