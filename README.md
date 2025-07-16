@@ -14,8 +14,6 @@ Watch the full project presentation here: **[E-commerce Chat Assistant](https://
 
 ---
 
----
-
 ## 📌 Dataset Information
 The product data currently includes only women’s footwear. Each product contains attributes like brand, title, price, discount, rating, and total number of reviews.
 
