@@ -10,7 +10,7 @@ You can try the tool live here: **[E-commerce Chat Assistant](https://vaibhav-pr
 ---
 
 ## 🎥 Presentation
-Watch the full project presentation here: **[E-commerce Chat Assistant](https://vaibhav-projects.my.canva.site/health-insurance-premium-prediction)**
+Watch the full project presentation here: **[E-commerce Chat Assistant](https://vaibhav-project.my.canva.site/e-commerce-chat-assistant-presentation)**
 
 ---
 
