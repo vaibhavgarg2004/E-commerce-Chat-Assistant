@@ -1,10 +1,12 @@
 import os
 import sys
 
+# Patch the standard sqlite3 module with pysqlite3 to ensure compatibility with ChromaDB, which requires SQLite version >= 3.35.0 (often not available in default Python builds) for streamlit cloud.
+
 os.environ["SQLITE3_CONNECT_PATCHED"] = "1"
 
 try:
-    import pysqlite3
+    import pysqlite3 # type: ignore
     sys.modules["sqlite3"] = sys.modules["pysqlite3"]
 except ImportError:
     pass
