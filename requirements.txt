@@ -5,4 +5,4 @@ python-dotenv==1.1.1
 semantic_router==0.1.10
 streamlit==1.45.1
 sentence_transformers==5.0.0
-pysqlite3-binary==0.5.3
+pysqlite3-binary==0.5.4
