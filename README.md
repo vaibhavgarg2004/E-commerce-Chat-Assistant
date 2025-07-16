@@ -67,7 +67,7 @@ E_commerce_Chat_Assistant/
    ```commandline
     pip install -r requirements.txt
    ```
-3. **Set up your environment variables**:
+3. **Add GROQ credentials in a .env file inside the app/ directory:**:
     ```text
     GROQ_API_KEY=GROQ_API_KEY_HERE
     GROQ_MODEL=llama-3.3-70b-versatile
