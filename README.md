@@ -14,6 +14,13 @@ Watch the full project presentation here: **[E-commerce Chat Assistant](https://
 
 ---
 
+---
+
+## 📌 Dataset Information
+The product data currently includes only women’s footwear. Each product contains attributes like brand, title, price, discount, rating, and total number of reviews.
+
+---
+
 ## 🛠 Features  
 - Clean and responsive Streamlit-based web interface  
 - Supports multiple query types:  
@@ -22,7 +29,7 @@ Watch the full project presentation here: **[E-commerce Chat Assistant](https://
   - **Small Talk** support for casual, friendly interaction  
 - Uses **Semantic Routing** to identify user intent intelligently  
 - Fast and accurate responses powered by **LLaMA-3.3 via GROQ API**  
-- Real-time product listing from database without needing a backend server  
+- Real-time product listing from a live SQLite database (no backend server required) 
 - Modular and well-structured codebase for quick customization and scaling   
 
 ---
@@ -74,7 +81,7 @@ E_commerce_Chat_Assistant/
    ```
 4. **Run the Streamlit app**:   
    ```commandline
-    streamlit run main.py
+    streamlit run app/main.py
    ```
 
 ---
