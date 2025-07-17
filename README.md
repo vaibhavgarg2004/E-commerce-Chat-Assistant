@@ -1,6 +1,6 @@
 # 🛒 E-commerce Chat Assistant
 
-A smart, conversational AI chat assistant built using Streamlit that enhances user experience on e-commerce platforms by handling both customer queries and product discovery. Powered by Retrieval-Augmented Generation (RAG) using LLaMA3 (via GROQ) and live database integration, this assistant helps users with instant and intelligent responses.
+A smart, conversational AI chat assistant built using Streamlit that enhances user experience on e-commerce platforms by handling both customer queries and product discovery. Powered by Retrieval-Augmented Generation (RAG) using LLaMA3 (via GROQ) and local database integration, this assistant helps users with instant and intelligent responses.
 
 ---
 
@@ -23,11 +23,11 @@ The product data currently includes only women’s footwear. Each product contai
 - Clean and responsive Streamlit-based web interface  
 - Supports multiple query types:  
   - **FAQ Queries** using RAG for platform-related questions  
-  - **SQL Queries** for real-time product search and filtering  
+  - **SQL Queries** for dynamic product search and filtering  
   - **Small Talk** support for casual, friendly interaction  
 - Uses **Semantic Routing** to identify user intent intelligently  
 - Fast and accurate responses powered by **LLaMA-3.3 via GROQ API**  
-- Real-time product listing from a live SQLite database (no backend server required) 
+- Dynamic product listing from a local SQLite database (no backend server required) 
 - Modular and well-structured codebase for quick customization and scaling   
 
 ---
@@ -95,7 +95,7 @@ E_commerce_Chat_Assistant/
 
 2. **Routing Logic**  
    - **FAQ Route**: Uses **ChromaDB + Sentence Transformers** to retrieve relevant policy answers via semantic search (RAG).  
-   - **SQL Route**: Converts the query into SQL using LLMs and executes it on a **live SQLite product database**.  
+   - **SQL Route**: Converts the query into SQL using LLMs and executes it on a **local SQLite product database**.  
    - **Small Talk**: Returns natural, friendly responses to casual inputs, enhancing engagement.  
 
 3. **Dynamic Streamlit Output**  
