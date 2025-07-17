@@ -60,6 +60,17 @@ E_commerce_Chat_Assistant/
 ---
 
 ## 🚀 How to Run Locally  
+
+### ⚠️ Note for Windows Users
+
+This project uses **ChromaDB**, which requires **SQLite ≥ 3.35.0**. Most Linux environments (like Streamlit Cloud) are patched using `pysqlite3-binary`, but:
+
+- **`pysqlite3-binary` does NOT install on Windows**.
+- If you're on Windows and the app works, your system SQLite is likely already up-to-date.
+- If you encounter a `sqlite3` version error, please [manually install SQLite ≥ 3.35.0](https://www.sqlite.org/download.html) and ensure it's on your system PATH.
+
+> **Do not install `pysqlite3-binary` on Windows** — it's only meant for Linux deployments (e.g., Streamlit Cloud).
+
 ### Prerequisites:  
 - Python 3.8+
 
