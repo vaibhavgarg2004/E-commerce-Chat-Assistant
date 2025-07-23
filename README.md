@@ -83,7 +83,7 @@ This project uses **ChromaDB**, which requires **SQLite ≥ 3.35.0**. Most Linux
    ```commandline
     pip install -r requirements.txt
    ```
-3. **Add GROQ credentials in a .env file inside the app/ directory:**:
+3. **Add GROQ credentials in a .env file inside the app/ directory**:
     ```text
     GROQ_API_KEY=GROQ_API_KEY_HERE
     GROQ_MODEL=llama-3.3-70b-versatile
